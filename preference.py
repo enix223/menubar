@@ -287,6 +287,9 @@ class PreferenceController(NSWindowController):
             # Notify the app to reload settings
             self.callback(*self.args)
 
+    def startupDidChanged_(self, _):
+        pass
+
     def segControlDidClicked_(self, segment):
         '''
         IBAction for add/remove button is clicked
